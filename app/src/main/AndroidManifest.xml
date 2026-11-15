@@ -2,9 +2,9 @@
 
     <application
         android:allowBackup="true"
-        android:label="Місця для мандрівок"
+        android:label="Мої контакти"
         android:supportsRtl="true"
-        android:theme="@style/Theme.TravelPlacesDemo">
+        android:theme="@style/Theme.ContactsApp">
         <activity
             android:name=".MainActivity"
             android:exported="true">

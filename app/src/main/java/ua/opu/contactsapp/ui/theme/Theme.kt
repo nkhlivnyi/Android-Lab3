@@ -1,23 +1,25 @@
-package ua.opu.travelplacesdemo.ui.theme
+package ua.opu.contactsapp.ui.theme
 
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
 
+val Orange = Color(0xFFFF9800)
+val ScreenBackground = Color(0xFFF5F5F5)
+val CardBorder = Color(0xFFE0E0E0)
+val SecondaryText = Color(0xFF666666)
+
 private val LightColors = lightColorScheme(
-    primary = Color(0xFF1565C0),
-    secondary = Color(0xFF00897B),
-    tertiary = Color(0xFFFF8F00)
+    primary = Orange,
+    onPrimary = Color.White,
+    background = ScreenBackground,
+    surface = Color.White,
+    onSurface = Color.Black
 )
 
-/**
- * Єдина тема застосунку.
- *
- * Окремий файл теми потрібен, щоб усі екрани мали однаковий стиль.
- */
 @Composable
-fun TravelPlacesDemoTheme(
+fun ContactsAppTheme(
     content: @Composable () -> Unit
 ) {
     MaterialTheme(
